@@ -109,6 +109,7 @@ button:hover
     </div>
 </body>
 <script>
+let n0=document.getElementById('0')
 let n1=document.getElementById('1')
 let n2=document.getElementById('2')
 let   n3=document.getElementById('3')
@@ -129,6 +130,11 @@ let   n3=document.getElementById('3')
 let sc=document.getElementById("screen")
   n1.addEventListener("click",()=>{
       a.push(1)
+      sc.innerHTML=(a.join('')) 
+      
+  })
+    n0.addEventListener("click",()=>{
+      a.push(0)
       sc.innerHTML=(a.join('')) 
       
   })
